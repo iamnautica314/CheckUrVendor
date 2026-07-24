@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Assessment | Check Ur Vendor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <h2>🛡️ Check Ur Vendor</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="assessment.html">Assessment</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <main class="assessment-container">
+        <form id="assessmentForm">
+            <h1>Vendor Security Assessment</h1>
+            <p>
+                Complete the assessment below to evaluate ur vendor's
+                cybersecurity posture and identify potential risks
+            </p>
+<section class="assessment-section">
+    <h2>🏢 Vendor Information</h2>
+    <p class="section-description">
+        Enter ur vendor's basic information
+         </form>
+</section>
+    </p>
+    <div class="form-group">
+        <label for="vendorName">Vendor Name</label>
+        <input type="text" id="vendorName" name="vendorName" required>
+    </div>
+    <div class="form-group">
+        <label for="website">Company Website</label>
+        <input type="url" id="website" name="website">
+    </div>
+    <div class="form-group">
+        <label for="industry">Industry</label>
+        <select id="industry" name="industry" required>
+            <option value="">Pick an Industry</option>
+            <option>Healthcare</option>
+            <option>Financial Services</option>
+            <option>Technology</option>
+            <option>Retail</option>
+            <option>Government</option>
+            <option>Education</option>
+            <option>Manufacturing</option>
+            <option>Energy</option>
+            <option>Other</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="contactName">Primary Contact</label>
+        <input type="text" id="contactName" name="contactName" required>
+    </div>
+    <div class="form-group">
+        <label for="contactEmail">Contact Email</label>
+        <input type="email" id="contactEmail" name="contactEmail" required>
+    </div>
+    <div class="form-group">
+        <label for="assessmentDate">Assessment Date</label>
+        <input type="date" id="assessmentDate" name="assessmentDate" required>
+    </div>
+</section>
+<section class="assessment-section">
+    <h2>🔐 Identity & Access Management</h2>
+    <p class="section-description">
+        Evaluate how the vendor manages user identities, authentication,
+        authorization, and access to sensitive systems
+    </p>
+    <div class="question-card">
+        <h3>Multi-Factor Authentication (MFA)</h3>
+        <p>
+            Does the vendor enforce MFA (Multi Factor Authentication)
+            for users with access to sensitive systems and data?
+        </p>
+        <div class="maturity-scale">
+            <label>
+                <input type="radio" name="q1" value="10">
+                Fully Implemented
+            </label>
+            <label>
+                <input type="radio" name="q1" value="5">
+                Partially Implemented
+            </label>
+            <label>
+                <input type="radio" name="q1" value="0">
+                Not Implemented
+            </label>
+            <label>
+                <input type="radio" name="q1" value="na">
+                Not Applicable
+            </label>
+        </div>
+    </div>
+    <div class="question-card">
+        <h3>Least Privilege</h3>
+        <p>
+            Does the vendor enforce least privilege access and
+            regularly monitor user activity?
+        </p>
+        <div class="maturity-scale">
+            <label><input type="radio" name="q2" value="10"> Fully Implemented</label>
+            <label><input type="radio" name="q2" value="5"> Partially Implemented</label>
+            <label><input type="radio" name="q2" value="0"> Not Implemented</label>
+            <label><input type="radio" name="q2" value="na"> Not Applicable</label>
+        </div>
+    </div>
+    <div class="question-card">
+        <h3>Access Reviews</h3>
+        <p>
+            Are user access reviews performed regularly to ensure
+            permissions remain appropriate?
+        </p>
+        <div class="maturity-scale">
+            <label><input type="radio" name="q3" value="10"> Fully Implemented</label>
+            <label><input type="radio" name="q3" value="5"> Partially Implemented</label>
+            <label><input type="radio" name="q3" value="0"> Not Implemented</label>
+            <label><input type="radio" name="q3" value="na"> Not Applicable</label>
+        </div>
+    </div>
+</section>
+<section class="assessment-section">
+    <h2>🔒 Data Protection</h2>
+    <p class="section-description">
+        Evaluate how the vendor protects sensitive information
+        during storage, transmission, and recovery
+    </p>
+    <div class="question-card">
+        <h3>Encryption at Rest</h3>
+        <p>
+            Is sensitive data encrypted while stored (at rest)?
+        </p>
+        <div class="maturity-scale">
+            <label><input type="radio" name="q4" value="10"> Fully Implemented</label>
+            <label><input type="radio" name="q4" value="5"> Partially Implemented</label>
+            <label><input type="radio" name="q4" value="0"> Not Implemented</label>
+            <label><input type="radio" name="q4" value="na"> Not Applicable</label>
+        </div>
+    </div>
+    <div class="question-card">
+        <h3>Encryption in Transit</h3>
+        <p>
+            Is sensitive data encrypted while transmitted
+            across networks?
+        </p>
+        <div class="maturity-scale">
+            <label><input type="radio" name="q5" value="10"> Fully Implemented</label>
+            <label><input type="radio" name="q5" value="5"> Partially Implemented</label>
+            <label><input type="radio" name="q5" value="0"> Not Implemented</label>
+            <label><input type="radio" name="q5" value="na"> Not Applicable</label>
+        </div>
+    </div>
+    <div class="question-card">
+        <h3>Backup & Recovery</h3>
+        <p>
+            Are backups performed regularly and protected against
+            unauthorized modification?
+        </p>
+        <div class="maturity-scale">
+            <label><input type="radio" name="q6" value="10"> Fully Implemented</label>
+            <label><input type="radio" name="q6" value="5"> Partially Implemented</label>
+            <label><input type="radio" name="q6" value="0"> Not Implemented</label>
+            <label><input type="radio" name="q6" value="na"> Not Applicable</label>
+        </div>
+    </div>
+    </section>
+<section class="assessment-section">
+    <h2>📋 Governance & Compliance</h2>
+    <p class="section-description">
+        Evaluate the vendor's governance practices, compliance posture,
+        and organizational cybersecurity policies.
+    </p>
+    <div class="question-card">
+        <h3>Information Security Policies</h3>
+        <p>
+            Does the vendor maintain documented information security
+            policies and procedures?
+        </p>
+        <small>
+            Policies should define how information is protected,
+            handled, and accessed throughout the organization.
+        </small>
+        <div class="maturity-scale">
+            <label><input type="radio" name="q7" value="10"> Fully Implemented</label>
+            <label><input type="radio" name="q7" value="5"> Partially Implemented</label>
+            <label><input type="radio" name="q7" value="0"> Not Implemented</label>
+            <label><input type="radio" name="q7" value="na"> Not Applicable</label>
+        </div>
+    </div>
+    <div class="question-card">
+        <h3>SOC 2 / Independent Security Assessment</h3>
+        <p>
+            Does the vendor maintain a current SOC 2 report or equivalent
+            independent security assessment?
+        </p>
+        <div class="maturity-scale">
+            <label><input type="radio" name="q8" value="10"> Fully Implemented</label>
+            <label><input type="radio" name="q8" value="5"> Partially Implemented</label>
+            <label><input type="radio" name="q8" value="0"> Not Implemented</label>
+            <label><input type="radio" name="q8" value="na"> Not Applicable</label>
+        </div>
+    </div>
+    <div class="question-card">
+        <h3>Security Awareness Training</h3>
+        <p>
+            Are employees required to complete regular cybersecurity
+            awareness training?
+        </p>
+        <div class="maturity-scale">
+            <label><input type="radio" name="q9" value="10"> Fully Implemented</label>
+            <label><input type="radio" name="q9" value="5"> Partially Implemented</label>
+            <label><input type="radio" name="q9" value="0"> Not Implemented</label>
+            <label><input type="radio" name="q9" value="na"> Not Applicable</label>
+        </div>
+    </div>
+</section>
+<section class="assessment-section">
+    <h2>⚙️ Change & Vulnerability Management</h2>
+    <p class="section-description">
+        Evaluate how the vendor manages system changes,
+        vulnerabilities, and security updates.
+    </p>
+    <div class="question-card">
+        <h3>Change Management</h3>
+        <p>
+            Does the vendor maintain a formal change management process
+            for systems, applications, and networks?
+        </p>
+        <div class="maturity-scale">
+            <label><input type="radio" name="q10" value="10"> Fully Implemented</label>
+            <label><input type="radio" name="q10" value="5"> Partially Implemented</label>
+            <label><input type="radio" name="q10" value="0"> Not Implemented</label>
+            <label><input type="radio" name="q10" value="na"> Not Applicable</label>
+        </div>
+    </div>
+    <div class="question-card">
+        <h3>Vulnerability Management</h3>
+        <p>
+            Does the vendor regularly identify, assess, and remediate
+            security vulnerabilities?
+        </p>
+        <div class="maturity-scale">
+            <label><input type="radio" name="q11" value="10"> Fully Implemented</label>
+            <label><input type="radio" name="q11" value="5"> Partially Implemented</label>
+            <label><input type="radio" name="q11" value="0"> Not Implemented</label>
+            <label><input type="radio" name="q11" value="na"> Not Applicable</label>
+        </div>
+    </div>
+    <div class="question-card">
+        <h3>Patch Management</h3>
+        <p>
+            Does the vendor maintain current security patches
+            and secure system configurations?
+        </p>
+        <div class="maturity-scale">
+            <label><input type="radio" name="q12" value="10"> Fully Implemented</label>
+            <label><input type="radio" name="q12" value="5"> Partially Implemented</label>
+            <label><input type="radio" name="q12" value="0"> Not Implemented</label>
+            <label><input type="radio" name="q12" value="na"> Not Applicable</label>
+        </div>
+    </div>
+</section>
+<section class="assessment-section">
+    <h2>🌐 Network Security</h2>
+    <p class="section-description">
+        Evaluate the effectiveness of the vendor's network
+        security controls.
+    </p>
+    <div class="question-card">
+        <h3>Network Security Controls</h3>
+        <p>
+            Are network security controls implemented to prevent
+            unauthorized access?
+        </p>
+        <div class="maturity-scale">
+            <label><input type="radio" name="q13" value="10"> Fully Implemented</label>
+            <label><input type="radio" name="q13" value="5"> Partially Implemented</label>
+            <label><input type="radio" name="q13" value="0"> Not Implemented</label>
+            <label><input type="radio" name="q13" value="na"> Not Applicable</label>
+        </div>
+    </div>
+    <div class="question-card">
+        <h3>Threat Detection</h3>
+        <p>
+            Are intrusion detection and prevention controls
+            implemented to identify malicious activity?
+        </p>
+        <div class="maturity-scale">
+            <label><input type="radio" name="q14" value="10"> Fully Implemented</label>
+            <label><input type="radio" name="q14" value="5"> Partially Implemented</label>
+            <label><input type="radio" name="q14" value="0"> Not Implemented</label>
+            <label><input type="radio" name="q14" value="na"> Not Applicable</label>
+        </div>
+    </div>
+    <div class="question-card">
+        <h3>Penetration Testing</h3>
+        <p>
+            Are independent penetration tests performed
+            on a regular basis?
+        </p>
+        <div class="maturity-scale">
+            <label><input type="radio" name="q15" value="10"> Fully Implemented</label>
+            <label><input type="radio" name="q15" value="5"> Partially Implemented</label>
+            <label><input type="radio" name="q15" value="0"> Not Implemented</label>
+            <label><input type="radio" name="q15" value="na"> Not Applicable</label>
+        </div>
+    </div>
+</section>
+<section class="assessment-section">
+    <h2>🚨 Incident Response</h2>
+    <p class="section-description">
+        Evaluate the vendor's ability to detect,
+        respond to, and recover from cybersecurity incidents.
+    </p>
+    <div class="question-card">
+        <h3>Incident Response Plan</h3>
+        <p>
+            Does the vendor maintain a documented
+            cybersecurity incident response plan?
+        </p>
+        <div class="maturity-scale">
+            <label><input type="radio" name="q16" value="10"> Fully Implemented</label>
+            <label><input type="radio" name="q16" value="5"> Partially Implemented</label>
+            <label><input type="radio" name="q16" value="0"> Not Implemented</label>
+            <label><input type="radio" name="q16" value="na"> Not Applicable</label>
+        </div>
+    </div>
+    <div class="question-card">
+        <h3>Incident Response Testing</h3>
+        <p>
+            Is the incident response plan tested regularly
+            through tabletop exercises or simulations?
+        </p>
+        <div class="maturity-scale">
+            <label><input type="radio" name="q17" value="10"> Fully Implemented</label>
+            <label><input type="radio" name="q17" value="5"> Partially Implemented</label>
+            <label><input type="radio" name="q17" value="0"> Not Implemented</label>
+            <label><input type="radio" name="q17" value="na"> Not Applicable</label>
+        </div>
+    </div>
+    <div class="question-card">
+        <h3>Security Incidents</h3>
+        <p>
+            Has the vendor experienced any significant
+            cybersecurity incidents or data breaches
+            within the past 12 months?
+        </p>
+        <div class="maturity-scale">
+            <label><input type="radio" name="q18" value="10"> No Incidents</label>
+            <label><input type="radio" name="q18" value="5"> Minor Incident(s)</label>
+            <label><input type="radio" name="q18" value="0"> Major Incident(s)</label>
+            <label><input type="radio" name="q18" value="na"> Not Disclosed</label>
+        </div>
+    </div>
+</section>
+<section class="assessment-section">
+    <h2>🔄 Business Continuity & Disaster Recovery</h2>
+    <p class="section-description">
+        Evaluate the vendor's ability to continue
+        operations and recover following disruptive events.
+    </p>
+    <div class="question-card">
+        <h3>Disaster Recovery Plan</h3>
+        <p>
+            Does the vendor maintain a documented
+            Disaster Recovery Plan (DRP)?
+        </p>
+        <div class="maturity-scale">
+            <label><input type="radio" name="q19" value="10"> Fully Implemented</label>
+            <label><input type="radio" name="q19" value="5"> Partially Implemented</label>
+            <label><input type="radio" name="q19" value="0"> Not Implemented</label>
+            <label><input type="radio" name="q19" value="na"> Not Applicable</label>
+        </div>
+    </div>
+    <div class="question-card">
+        <h3>Business Continuity Plan</h3>
+        <p>
+            Does the vendor maintain and regularly test
+            a Business Continuity Plan (BCP)?
+        </p>
+        <div class="maturity-scale">
+            <label><input type="radio" name="q20" value="10"> Fully Implemented</label>
+            <label><input type="radio" name="q20" value="5"> Partially Implemented</label>
+            <label><input type="radio" name="q20" value="0"> Not Implemented</label>
+            <label><input type="radio" name="q20" value="na"> Not Applicable</label>
+        </div>
+    </div>
+</section>
+<div class="submit-section">
+    <button type="submit" class="button">
+        Evaluate Ur Vendor Risk
+    </button>
+</div>
+</form>
+</section>
+<footer>
+        <p>© 2026 Check Ur Vendor | Built by Nautica Montgomery</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
+</main>
