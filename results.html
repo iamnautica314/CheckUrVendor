@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vendor Risk Results | Check Ur Vendor</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+<h2>🛡️ Check Ur Vendor</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="assessment.html">Assessment</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="results.html">Results</a></li>
+</ul>
+</nav>
+<main class="results-container">
+<h1>Vendor Risk Assessment Results</h1>
+<section class="risk-summary">
+<h2>Overall Vendor Risk</h2>
+<h3 id="overallScore">
+--%
+</h3>
+<p id="overallRisk">
+Calculating...
+</p>
+</section>
+<section class="domain-results">
+<h2>Security Domain Breakdown</h2>
+<div id="domainResults"></div>
+</section>
+<section class="recommendations">
+<h2>Recommendations</h2>
+<ul id="recommendationList"></ul>
+</section>
+</main>
+<script src="js/results.js"></script>
+</body>
+</html>

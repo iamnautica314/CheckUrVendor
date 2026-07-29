@@ -24,11 +24,32 @@
                 Complete the assessment below to evaluate ur vendor's
                 cybersecurity posture and identify potential risks
             </p>
+<div class="progress-container">
+    <div class="progress-header">
+        <h3>Assessment Progress</h3>
+        <span id="progressPercent">0% Complete</span>
+    </div>
+    <div class="progress-bar">
+        <div id="progressFill" class="progress-fill"></div>
+    </div>
+</div>
+<div class="checklist-container">
+    <h3>Assessment Checklist</h3>
+    <ul id="assessmentChecklist">
+        <li id="vendorStatus">⬜ Vendor Information</li>
+        <li id="iamStatus">⬜ Identity & Access Management</li>
+        <li id="dataStatus">⬜ Data Protection</li>
+        <li id="governanceStatus">⬜ Governance & Compliance</li>
+        <li id="changeStatus">⬜ Change & Vulnerability Management</li>
+        <li id="networkStatus">⬜ Network Security</li>
+        <li id="incidentStatus">⬜ Incident Response</li>
+        <li id="bcpStatus">⬜ Business Continuity & Disaster Recovery</li>
+    </ul>
+</div>
 <section class="assessment-section">
     <h2>🏢 Vendor Information</h2>
     <p class="section-description">
         Enter ur vendor's basic information
-         </form>
 </section>
     </p>
     <div class="form-group">
@@ -398,11 +419,11 @@
     </button>
 </div>
 </form>
-</section>
+</main>
 <footer>
-        <p>© 2026 Check Ur Vendor | Built by Nautica Montgomery</p>
-    </footer>
-    <script src="js/app.js"></script>
+    <p>© 2026 Check Ur Vendor | Built by Nautica Montgomery</p>
+</footer>
+<script src="js/riskEngine.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
-</main>
