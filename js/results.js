@@ -1,6 +1,6 @@
 const storedResults =
     sessionStorage.getItem("vendorResults");
-if(storedResults){
+if (storedResults) {
     const results =
         JSON.parse(storedResults);
     console.log(results);
@@ -11,7 +11,7 @@ if(storedResults){
         .textContent =
         results.overallRisk;
 }
-else{
+else {
     document.getElementById("overallRisk")
         .textContent =
         "No assessment results found";

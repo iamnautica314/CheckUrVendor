@@ -98,3 +98,13 @@ form.addEventListener("submit", function(event) {
     );
     window.location.href = "results.html";
 });
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    const results = evaluateVendor();
+    console.log("Vendor Risk Results:", results);
+    sessionStorage.setItem(
+        "vendorResults",
+        JSON.stringify(results)
+    );
+    window.location.href = "results.html";
+});
