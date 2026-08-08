@@ -216,17 +216,11 @@ body {
     transition:width .5s ease;
 }
 .checklist-container{
-
     background:white;
-
     margin-bottom:35px;
-
     padding:25px;
-
     border-radius:12px;
-
     box-shadow:0 4px 12px rgba(0,0,0,.08);
-
 }
 .checklist-container ul{
     list-style:none;
@@ -235,4 +229,322 @@ body {
 .checklist-container li{
     padding:10px 0;
     font-size:16px;
+}
+.risk-badge{
+    display:inline-block;
+    padding:10px 24px;
+    margin-top:12px;
+    border-radius:25px;
+    color:white;
+    font-weight:bold;
+    font-size:16px;
+    width:auto;
+}
+.low{
+    background:#27AE60;
+}
+.medium{
+    background:#F2C94C;
+    color:#333;
+}
+.high{
+    background:#EB5757;
+}
+.domain-row{
+display:flex;
+justify-content:space-between;
+padding:12px;
+margin:10px 0;
+background:#f8f9fa;
+border-radius:8px;
+}
+.domain-row{
+    margin-bottom:20px;
+}
+.domain-info{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:6px;
+}
+.score-bar{
+    width:100%;
+    height:14px;
+    background:#d9d9d9;
+    border-radius:10px;
+    overflow:hidden;
+    margin-top:6px;
+}
+.score-fill{
+    height:100%;
+    border-radius:10px;
+    background:#2f80ed;
+    transition:width .5s ease;
+}
+.overall-progress{
+    margin-top:20px;
+}
+.overall-progress .score-bar{
+    height:24px;
+}
+.overall-progress .score-fill{
+    background:linear-gradient(90deg,#2F80ED,#00C2A8);
+}
+.results-container{
+    max-width:1000px;
+    margin:40px auto;
+    padding:20px;
+}
+.overall-card{
+    background:white;
+    border-radius:12px;
+    padding:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    text-align:center;
+}
+.risk-label{
+    margin-top:20px;
+    margin-bottom:10px;
+    font-weight:bold;
+    color:#555;
+}
+.dashboard-container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px;
+}
+.dashboard-container h1{
+    color:#12355B;
+    margin-bottom:10px;
+}
+.dashboard-subtitle{
+    color:#666;
+    margin-bottom:35px;
+}
+.summary-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-bottom:45px;
+}
+.summary-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+.summary-card h3{
+    color:#555;
+    margin-bottom:15px;
+}
+.summary-card h2{
+    color:#0077cc;
+    font-size:42px;
+}
+.history-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+th{
+    background:#12355B;
+    color:white;
+    padding:16px;
+}
+td{
+    padding:16px;
+    border-bottom:1px solid #eee;
+}
+tr:hover{
+    background:#f8fbff;
+}
+.login-container {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+.login-card {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.12);
+}
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.login-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.login-header h1 {
+    color: #12355B;
+    margin-bottom: 8px;
+}
+.login-header p {
+    color: #666;
+    font-size: 15px;
+}
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.password-wrapper input {
+    width: 100%;
+    padding-right: 70px;
+}
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    border: none;
+    background: transparent;
+    color: #0077cc;
+    font-weight: bold;
+    cursor: pointer;
+}
+.password-toggle:hover {
+    color: #005fa3;
+}
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 25px;
+    font-size: 14px;
+}
+.remember-option {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+}
+.remember-option input {
+    width: auto;
+}
+.login-options a {
+    color: #0077cc;
+    text-decoration: none;
+}
+.login-options a:hover {
+    text-decoration: underline;
+}
+.login-button {
+    width: 100%;
+    background: #0077cc;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+.login-button:hover {
+    background: #005fa3;
+    transform: translateY(-2px);
+}
+.create-account {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+.create-account p {
+    color: #666;
+}
+.create-account a {
+    color: #0077cc;
+    font-weight: bold;
+    text-decoration: none;
+}
+.create-account a:hover {
+    text-decoration: underline;
+}
+.back-home {
+    text-align: center;
+    margin-top: 20px;
+}
+.back-home a {
+    color: #12355B;
+    text-decoration: none;
+    font-weight: bold;
+}
+.back-home a:hover {
+    color: #00C2A8;
+}
+@media (max-width: 600px) {
+    .login-card {
+        padding: 30px 20px;
+    }
+    .login-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
+nav ul li a {
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: #00C2A8;
+}
+nav ul li a.active {
+    background: #00C2A8;
+    color: white;
+}
+.button,
+.login-button {
+    display: inline-block;
+    background: #0077cc;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.button:hover,
+.login-button:hover {
+    background: #005fa3;
+    transform: translateY(-2px);
+}
+.button-secondary {
+    background: #12355B;
+}
+.button-secondary:hover {
+    background: #0d2945;
+}
+.button-success {
+    background: #00C2A8;
+}
+.button-success:hover {
+    background: #009B87;
+}
+.card,
+.overall-card,
+.status-card,
+.domain-card,
+.recommendations-section,
+.login-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }

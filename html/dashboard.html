@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Check Ur Vendor</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav>
+    <h2>🛡️ Check Ur Vendor</h2>
+    <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="assessment.html">Assessment</a>
+        </li>
+        <li>
+            <a href="dashboard.html" class="active">Dashboard</a>
+        </li>
+        <li>
+            <a href="results.html">Results</a>
+        </li>
+        <li>
+            <a href="login.html" id="authButton">Login</a>
+        </li>
+    </ul>
+</nav>
+<main class="dashboard-container">
+<h1>Vendor Risk Dashboard</h1>
+<p class="dashboard-subtitle">
+View vendor risk metrics and assessment history.
+</p>
+<div class="summary-grid">
+<div class="summary-card">
+<h3>Total Vendors</h3>
+<h2 id="totalVendors">0</h2>
+</div>
+<div class="summary-card">
+<h3>Average Score</h3>
+<h2 id="averageScore">0%</h2>
+</div>
+<div class="summary-card">
+<h3>High Risk Vendors</h3>
+<h2 id="highRiskCount">0</h2>
+</div>
+<div class="summary-card">
+<h3>Low Risk Vendors</h3>
+<h2 id="lowRiskCount">0</h2>
+</div>
+</div>
+<div class="history-card">
+<h2>Recent Assessments</h2>
+<table>
+<thead>
+<tr>
+<th>Vendor</th>
+<th>Score</th>
+<th>Risk</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody id="historyTable">
+</tbody>
+</table>
+</div>
+</main>
+<a href="#" id="logoutButton" class="button">Logout</a>
+<script src="../js/auth.js"></script>
+<script src="../js/dashboard.js"></script>
+<script src="../js/logout.js"></script>
+<script src="../js/navigation.js" defer></script>
+</body>
+</html>

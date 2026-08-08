@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vendor Risk Results | Check Ur Vendor</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav>
+    <h2>🛡️ Check Ur Vendor</h2>
+    <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="assessment.html">
+                Assessment
+            </a>
+        </li>
+        <li>
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+        </li>
+        <li>
+            <a href="results.html" class="active">
+                Results
+            </a>
+        </li>
+        <li>
+            <a href="login.html" id="authButton">
+                Login
+            </a>
+        </li>
+    </ul>
+</nav>
+<main class="results-container">
+    <h1>Vendor Risk Assessment Results</h1>
+   <div class="overall-card">
+    <h2>Overall Vendor Risk</h2>
+    <h3 id="overallScore">0%</h3>
+    <p class="risk-label">
+Risk Rating:
+</p>
+   <span id="riskBadge" class="risk-badge risk-high"></span>
+    <div class="overall-progress">
+        <div class="score-bar">
+            <div id="overallFill" class="score-fill"></div>
+        </div>
+    </div>
+</div>
+    <div class="status-card">
+        <h2>Assessment Status</h2>
+        <p id="assessmentStatus">
+            Completed Successfully
+        </p>
+    </div>
+    <div class="domain-card">
+        <h2>Security Domain Breakdown</h2>
+        <div id="domainResults"></div>
+    </div>
+    <div class="recommendations-section">
+    <h2>Recommendations</h2>
+    <div id="recommendationList"></div>
+</div>
+</main>
+<script src="js/results.js"></script>
+</body>
+</html>
